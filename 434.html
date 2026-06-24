@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Property 434 — CardSense SPL</title>
+  <style>
+    :root{--brand:#1a56db;--brand2:#1e429f;--ok:#057a55;--ok-bg:#def7ec;
+          --text:#111827;--muted:#6b7280;--border:#e5e7eb;--bg:#f9fafb;
+          --card:#ffffff;--r:12px;}
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);
+          color:var(--text);min-height:100vh;}
+    header{background:linear-gradient(135deg,var(--brand2),var(--brand));
+            color:#fff;padding:20px 24px;display:flex;align-items:center;gap:16px;
+            box-shadow:0 2px 8px rgba(0,0,0,.15);}
+    header .logo{font-size:28px;}
+    header h1{font-size:20px;font-weight:700;}
+    header p{font-size:13px;opacity:.85;}
+    .container{max-width:720px;margin:32px auto;padding:0 16px 40px;}
+    .verified{display:flex;align-items:center;gap:12px;
+               background:var(--ok-bg);border:1px solid #84e1bc;
+               border-radius:var(--r);padding:14px 20px;margin-bottom:24px;}
+    .verified .icon{font-size:28px;}
+    .verified .lbl{font-size:13px;color:var(--ok);font-weight:600;}
+    .verified .val{font-size:16px;font-weight:700;color:var(--ok);}
+    .card{background:var(--card);border:1px solid var(--border);
+           border-radius:var(--r);padding:24px;margin-bottom:20px;
+           box-shadow:0 1px 4px rgba(0,0,0,.06);}
+    .card h2{font-size:15px;color:var(--brand);font-weight:700;margin-bottom:16px;
+              padding-bottom:8px;border-bottom:2px solid var(--border);}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+    @media(max-width:480px){.grid{grid-template-columns:1fr;}}
+    .field{display:flex;flex-direction:column;gap:2px;}
+    .field label{font-size:11px;text-transform:uppercase;letter-spacing:.05em;
+                  color:var(--muted);font-weight:600;}
+    .field span{font-size:15px;font-weight:600;}
+    .mono{font-family:'Consolas',monospace;font-size:13px;}
+    .qr-wrap{text-align:center;}
+    .qr-wrap img{max-width:180px;border:1px solid var(--border);
+                  border-radius:8px;padding:8px;}
+    .qr-wrap p{font-size:12px;color:var(--muted);margin-top:8px;}
+    footer{text-align:center;font-size:12px;color:var(--muted);margin-top:32px;}
+    footer a{color:var(--brand);text-decoration:none;}
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo">🏠</div>
+  <div>
+    <h1>Smart Property Verification</h1>
+    <p>CardSense NFC Property Registry — cardsense-tech.github.io/SPL</p>
+  </div>
+</header>
+
+<div class="container">
+  <div class="verified">
+    <div class="icon">✅</div>
+    <div>
+      <div class="lbl">VERIFIED PROPERTY</div>
+      <div class="val"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Property Details</h2>
+    <div class="grid">
+      <div class="field"><label>Property Number</label><span>434</span></div>
+      <div class="field"><label>Property Type</label><span>Residential Row House</span></div>
+      <div class="field"><label>Street Number</label><span>62</span></div>
+      <div class="field"><label>Locality</label><span>Bud Locality</span></div>
+      <div class="field"><label>City</label><span>Badlapur</span></div>
+      <div class="field"><label>State</label><span>Maharashtra</span></div>
+      <div class="field"><label>Registration Date</label><span>15 January 2025</span></div>
+      <div class="field"><label>Status</label>
+        <span style="color:#057a55;">Active</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>NFC Tag Information</h2>
+    <div class="grid">
+      <div class="field"><label>Tag UID</label>
+        <span class="mono">04D6AC0A491491</span></div>
+      <div class="field"><label>Last Updated</label><span>2026-06-24 18:23:51</span></div>
+      <div class="field" style="grid-column:1/-1">
+        <label>Verification URL</label>
+        <span class="mono" style="font-size:12px;word-break:break-all;">https://cardsense-tech.github.io/SPL/434</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card qr-wrap">
+    <h2>QR Code</h2>
+    <img src="qrcodes/434.png" alt="QR Code for property 434"
+         onerror="this.style.display='none';this.nextElementSibling.textContent='QR code not available'"/>
+    <p>Scan to verify on any device</p>
+  </div>
+</div>
+
+<footer>
+  <p>Powered by <a href="https://cardsense-tech.github.io/SPL/">CardSense Smart Property Labels</a></p>
+</footer>
+</body>
+</html>
