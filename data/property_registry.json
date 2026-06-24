@@ -110,5 +110,19 @@
     "uid": "0420880A491492",
     "verification_url": "https://cardsense-tech.github.io/SPL/435",
     "last_updated": "2026-06-24 17:28:38"
+  },
+  "436": {
+    "property_number": "436",
+    "property_type": "Residential Row House",
+    "registration_date": "15 January 2025",
+    "status": "Active",
+    "locality": "Bud Locality",
+    "street_number": "64",
+    "city": "Badlapur",
+    "state": "Maharashtra",
+    "property_id": "PROP-436",
+    "uid": "0420880A491492",
+    "verification_url": "https://cardsense-tech.github.io/SPL/436",
+    "last_updated": "2026-06-24 17:28:43"
   }
 }
