@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CardSense Smart Property Registry</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+.header{
+    background:#003366;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,51,102,0.85),
+    rgba(0,51,102,0.85)),
+    url('https://images.unsplash.com/photo-1560518883-ce09059eeffa');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:800px;
+    margin:auto;
+    font-size:20px;
+    line-height:1.7;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#0b5ed7;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#084db2;
+}
+
+.section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:#003366;
+    font-size:40px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.feature-card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,0.08);
+}
+
+.feature-card h3{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+.how-it-works{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.step{
+    background:white;
+    text-align:center;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,0.08);
+}
+
+.step-number{
+    width:60px;
+    height:60px;
+    line-height:60px;
+    border-radius:50%;
+    background:#0b5ed7;
+    color:white;
+    margin:auto;
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.stats{
+    background:#003366;
+    color:white;
+    text-align:center;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+}
+
+.stat h2{
+    font-size:42px;
+}
+
+.footer{
+    background:#001f3f;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">CardSense</div>
+</header>
+
+<section class="hero">
+
+    <h1>Smart Property Registry</h1>
+
+    <p>
+        Digitally verify residential and commercial properties using
+        NFC and QR-enabled smart property plaques. Secure, trusted,
+        and instantly accessible from any smartphone.
+    </p>
+
+    <a href="#about" class="btn">Learn More</a>
+
+</section>
+
+<section class="section" id="about">
+
+    <div class="section-title">
+        <h2>Why Smart Property Registry?</h2>
+    </div>
+
+    <div class="features">
+
+        <div class="feature-card">
+            <h3>📱 NFC & QR Enabled</h3>
+            <p>
+                Instantly access verified property information by
+                tapping or scanning with any smartphone.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🔒 Secure Verification</h3>
+            <p>
+                Every property receives a unique digital identity
+                linked to a secure cloud-based registry.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🏡 Property Authentication</h3>
+            <p>
+                Confirm the authenticity and registration status
+                of a property in seconds.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h3>☁ Cloud Managed</h3>
+            <p>
+                Property records can be updated remotely without
+                replacing plaques or QR codes.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="section-title">
+        <h2>How It Works</h2>
+    </div>
+
+    <div class="how-it-works">
+
+        <div class="step">
+            <div class="step-number">1</div>
+            <h3>Register Property</h3>
+            <p>
+                Property details are securely stored in the
+                Smart Property Registry.
+            </p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">2</div>
+            <h3>Install Plaque</h3>
+            <p>
+                NFC and QR-enabled plaque is installed
+                outside the property.
+            </p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">3</div>
+            <h3>Scan & Verify</h3>
+            <p>
+                Anyone can instantly verify the property
+                using their smartphone.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section stats">
+
+    <div class="section-title">
+        <h2 style="color:white;">Built for Modern Communities</h2>
+    </div>
+
+    <div class="stats-grid">
+
+        <div class="stat">
+            <h2>100%</h2>
+            <p>Digital Verification</p>
+        </div>
+
+        <div class="stat">
+            <h2>24/7</h2>
+            <p>Accessibility</p>
+        </div>
+
+        <div class="stat">
+            <h2>NFC</h2>
+            <p>Smart Enabled</p>
+        </div>
+
+        <div class="stat">
+            <h2>QR</h2>
+            <p>Instant Access</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="section-title">
+        <h2>Applications</h2>
+    </div>
+
+    <div class="features">
+
+        <div class="feature-card">
+            <h3>Residential Societies</h3>
+            <p>Row houses, villas and gated communities.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Builders & Developers</h3>
+            <p>Digital handover and property verification.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Municipal Authorities</h3>
+            <p>Smart city and property identification projects.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Emergency Services</h3>
+            <p>Faster property identification and response.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <h3>CardSense Smart Property Registry</h3>
+
+    <p>
+        One Tap. Instant Property Verification.
+    </p>
+
+    <br>
+
+    <p>
+        cardsense.tech@gmail.com
+    </p>
+
+</footer>
+
+</body>
+</html>
