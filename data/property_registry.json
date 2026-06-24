@@ -120,10 +120,10 @@
     "street_number": "64",
     "city": "Badlapur",
     "state": "Maharashtra",
-    "property_id": "PROP-436",
-    "uid": "0420880A491492",
+    "property_id": "",
+    "uid": "045DA50A491491",
     "verification_url": "https://cardsense-tech.github.io/SPL/436",
-    "last_updated": "2026-06-24 17:28:43"
+    "last_updated": "2026-06-24 18:08:40"
   },
   "437": {
     "property_number": "437",
